@@ -1,20 +1,25 @@
 {
-  "name": "fmentor-nft-nextjs-scss",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
-  }
+	"name": "fmentor-nft-nextjs-sass",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"sass-dev": "sass --watch assets/scss/main.scss app/globals.css --no-source-map",
+		"sass-prod": "sass assets/scss/main.scss app/globals.css --style=compressed --no-source-map",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettier": "prettier --write ."
+	},
+	"dependencies": {
+		"react": "^18",
+		"react-dom": "^18",
+		"next": "14.1.0"
+	},
+	"devDependencies": {
+		"eslint": "^8",
+		"eslint-config-next": "14.1.0",
+		"prettier": "^2.8.8",
+		"sass": "^1.71.1"
+	}
 }

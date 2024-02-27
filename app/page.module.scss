@@ -1,0 +1,133 @@
+@use '../assets/scss/abstracts/variables' as var;
+@use '../assets/scss/abstracts/functions' as func;
+
+.main,
+.main > .container {
+	display: flex;
+	flex: auto;
+}
+
+.main > .container {
+	justify-content: center;
+	align-items: center;
+}
+
+.card,
+.card-image,
+.card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.stats,
+.stats li,
+.author {
+	display: flex;
+	align-items: center;
+}
+
+.card {
+	width: 100%;
+	max-width: func.em(350);
+	padding: func.em(24);
+	background-color: var.$color-dark-blue-2;
+	margin: func.em(30) 0 func.em(60);
+	border-radius: 15px;
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+	position: relative;
+	background-color: var.$color-soft-blue;
+	margin-bottom: func.em(24);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.card-image::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-color: var.$color-cyan-light;
+	background-image: url('/images/icons/view.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: inherit;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.card-image:hover::before {
+	opacity: 1;
+}
+
+.card-image img {
+	width: 100%;
+	height: auto;
+	border-radius: inherit;
+}
+
+.title {
+	margin-bottom: func.em(12, 22);
+}
+
+.desc {
+	margin-bottom: func.em(16, 18);
+}
+
+.stats li {
+	gap: func.em(7.7);
+	width: 50%;
+	font-size: func.em(15);
+}
+
+.stats li:first-child {
+	font-weight: var.$font-weight-600;
+	color: var.$color-cyan;
+}
+
+.stats li:last-child {
+	justify-content: flex-end;
+}
+
+.stats li i {
+	flex: none;
+}
+
+.author {
+	gap: func.em(16);
+	padding-top: func.em(16);
+	margin-top: func.em(16);
+	border-top: 1px solid var.$color-dark-blue-3;
+}
+
+.author img {
+	flex: none;
+	width: func.em(33);
+	height: auto;
+	border: 1px solid var.$color-white;
+	border-radius: 50%;
+}
+
+.author span {
+	font-size: func.em(15);
+}
+
+@media (min-width: 48em) {
+	.title {
+		margin-bottom: func.em(16, 22);
+	}
+
+	.desc {
+		margin-bottom: func.em(24, 18);
+	}
+
+	.stats li,
+	.author span {
+		font-size: func.em(16);
+	}
+
+	.author {
+		margin-top: func.em(24);
+	}
+}
