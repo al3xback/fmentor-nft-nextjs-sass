@@ -1,14 +1,8 @@
-import { Outfit } from 'next/font/google';
+import { outfit } from '@/assets/fonts';
+import '@/assets/css/globals.css';
 
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import './globals.css';
-
-const outfit = Outfit({
-	weight: ['300', '400', '600'],
-	subsets: ['latin'],
-	display: 'swap',
-});
 
 export const metadata = {
 	title: 'Frontend Mentor | NFT Preview Card Component | Next.js - Sass',

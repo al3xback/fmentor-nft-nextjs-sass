@@ -1,17 +1,6 @@
 @use '../assets/scss/abstracts/variables' as var;
 @use '../assets/scss/abstracts/functions' as func;
 
-.main,
-.main > .container {
-	display: flex;
-	flex: auto;
-}
-
-.main > .container {
-	justify-content: center;
-	align-items: center;
-}
-
 .card,
 .card-image,
 .card-content {

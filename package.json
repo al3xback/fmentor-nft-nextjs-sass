@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"sass-dev": "sass --watch assets/scss/main.scss app/globals.css --no-source-map",
-		"sass-prod": "sass assets/scss/main.scss app/globals.css --style=compressed --no-source-map",
+		"sass-dev": "sass --watch assets/scss/main.scss assets/css/globals.css --no-source-map",
+		"sass-prod": "sass assets/scss/main.scss assets/css/globals.css --style=compressed --no-source-map",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
