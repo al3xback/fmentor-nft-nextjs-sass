@@ -1,6 +1,7 @@
 .footer,
-.footer .container {
+.container {
 	display: flex;
+	flex-direction: column;
 }
 
 .footer {
@@ -11,11 +12,6 @@
 	padding: 1em 0;
 	font-size: 0.8em;
 	text-align: center;
-}
-
-.footer .container,
-.footer p {
-	flex: auto;
 }
 
 .footer p {

@@ -157,12 +157,12 @@ ol {
 .container {
 	padding: 0 1.5em;
 }
-main,
-main > .container {
+.main,
+.main > .container {
 	display: flex;
 	flex: auto;
 }
-main > .container {
+.main > .container {
 	justify-content: center;
 	align-items: center;
 }

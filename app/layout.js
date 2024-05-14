@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={outfit.className}>
 				<Header />
-				<main>
+				<main className="main">
 					<div className="container">{children}</div>
 				</main>
 				<Footer />

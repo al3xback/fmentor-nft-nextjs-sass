@@ -1,0 +1,10 @@
+.not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.6em;
+}
+
+.not-found h2 {
+	margin-bottom: 1em;
+}
